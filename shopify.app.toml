@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "f4ee6a69f5c4de95add6f8f716648fb2"
+name = "app-template-php"
+handle = "app-template-php-4"
+application_url = "https://dated-space-legs-insulation.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "genx-institute.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://dated-space-legs-insulation.trycloudflare.com/auth/callback",
+  "https://dated-space-legs-insulation.trycloudflare.com/auth/shopify/callback",
+  "https://dated-space-legs-insulation.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
