@@ -142,4 +142,5 @@ Route::post('/api/webhooks', function (Request $request) {
         Log::error("Got an exception when handling '$topic' webhook: {$e->getMessage()}");
         return response()->json(['message' => "Got an exception when handling '$topic' webhook"], 500);
     }
+    return response();
 });
