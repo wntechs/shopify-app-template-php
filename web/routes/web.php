@@ -102,7 +102,7 @@ Route::post('/api/products', function (Request $request) {
 
     $success = $code = $error = null;
     try {
-        ProductCreator::call($session, 5);
+        ProductCreator::call($session, 2);
         $success = true;
         $code = 200;
         $error = null;
