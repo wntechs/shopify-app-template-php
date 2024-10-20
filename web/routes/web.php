@@ -102,7 +102,7 @@ Route::post('/api/products', function (Request $request) {
 
     $success = $code = $error = null;
     try {
-        ProductCreator::call($session, 5);
+        ProductCreator::call($session, 2);
         $success = true;
         $code = 200;
         $error = null;
@@ -142,4 +142,5 @@ Route::post('/api/webhooks', function (Request $request) {
         Log::error("Got an exception when handling '$topic' webhook: {$e->getMessage()}");
         return response()->json(['message' => "Got an exception when handling '$topic' webhook"], 500);
     }
+    return response();
 });
