@@ -3,7 +3,7 @@
 client_id = "f4ee6a69f5c4de95add6f8f716648fb2"
 name = "app-template-php"
 handle = "app-template-php-4"
-application_url = "https://union-upgrades-nodes-kick.trycloudflare.com"
+application_url = "https://cia-nascar-hrs-ve.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://union-upgrades-nodes-kick.trycloudflare.com/auth/callback",
-  "https://union-upgrades-nodes-kick.trycloudflare.com/auth/shopify/callback",
-  "https://union-upgrades-nodes-kick.trycloudflare.com/api/auth/callback"
+  "https://cia-nascar-hrs-ve.trycloudflare.com/auth/callback",
+  "https://cia-nascar-hrs-ve.trycloudflare.com/auth/shopify/callback",
+  "https://cia-nascar-hrs-ve.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
